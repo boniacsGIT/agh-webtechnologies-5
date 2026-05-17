@@ -5,8 +5,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-})
 
-export default {
   base: '/agh-webtechnologies-5/'
-}
+})
