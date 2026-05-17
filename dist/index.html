@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/agh-webtechnologies-5/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>agh-techweb-5</title>
+    <script type="module" crossorigin src="/agh-webtechnologies-5/assets/index-B3SWNfrN.js"></script>
+    <link rel="stylesheet" crossorigin href="/agh-webtechnologies-5/assets/index-BmlR_xnf.css">
+  </head>
+  <body>
+    <h1 class="text-2xl font-bold">
+      tailwind+dayjs test
+    </h1>
+    <main>
+      <form id="birthdayForm">
+        <label for="birthday">dzien i miesiac urodzin:</label>
+        <input type="date" id="birthday" name="birthday" min="2026-01-01" max="2026-12-31" required>
+        <button type="submit" class="p-4 bg-blue-300">za ile urodziny</button>
+      </form>
+      <dialog id="birthdayDialog" class="relative bg-gray-200">
+        <button id="closeDialog" class="absolute right-0 top-0 text-red-600 hover: cursor-pointer">x</button>
+        <br>
+        <p id="birthdayDialogText" class="text-red-600"></p>
+        <p id="supplementaryDialogText" class="text-red-600"></p>
+      </dialog>
+    </main>
+  </body>
+</html>
