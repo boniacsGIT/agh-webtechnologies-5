@@ -6,3 +6,7 @@ export default defineConfig({
     tailwindcss(),
   ],
 })
+
+export default {
+  base: '/agh-webtechnologies-5/'
+}
