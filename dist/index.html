@@ -5,25 +5,50 @@
     <link rel="icon" type="image/svg+xml" href="/agh-webtechnologies-5/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>agh-techweb-5</title>
-    <script type="module" crossorigin src="/agh-webtechnologies-5/assets/index-B3SWNfrN.js"></script>
-    <link rel="stylesheet" crossorigin href="/agh-webtechnologies-5/assets/index-BmlR_xnf.css">
+    <script type="module" crossorigin src="/agh-webtechnologies-5/assets/index-BJNZDCry.js"></script>
+    <link rel="stylesheet" crossorigin href="/agh-webtechnologies-5/assets/index-CkGkNM9x.css">
   </head>
   <body>
-    <h1 class="text-2xl font-bold">
-      tailwind+dayjs test
-    </h1>
-    <main>
-      <form id="birthdayForm">
-        <label for="birthday">dzien i miesiac urodzin:</label>
-        <input type="date" id="birthday" name="birthday" min="2026-01-01" max="2026-12-31" required>
-        <button type="submit" class="p-4 bg-blue-300">za ile urodziny</button>
-      </form>
-      <dialog id="birthdayDialog" class="relative bg-gray-200">
-        <button id="closeDialog" class="absolute right-0 top-0 text-red-600 hover: cursor-pointer">x</button>
-        <br>
-        <p id="birthdayDialogText" class="text-red-600"></p>
-        <p id="supplementaryDialogText" class="text-red-600"></p>
-      </dialog>
-    </main>
+    <h1 class="text-3xl font-bold p-1">supabase test</h1>
+
+    <label for="sorter" class="p-2">sortuj wyniki po:</label>
+    <select id="sorter">
+      <option value="created_at.asc">dacie rosnaco</option>
+      <option value="created_at.desc">dacie malejaco</option>
+      <option value="title.asc">nazwie alfabetycznie</option>
+    </select>
+
+    <main id="main"></main>
+
+    <h2 class="text-2xl font-bold p-2">nowy artykul form</h2>
+    <form id="article-form">
+      <div class="form-group p-3">
+        <label for="title">tytul:</label>
+        <input type="text" id="title" class="bg-gray-200" required>
+      </div>
+
+      <div class="form-group p-3">
+        <label for="subtitle">podtytul:</label>
+        <input type="text" id="subtitle" class="bg-gray-200" required>
+      </div>
+
+      <div class="form-group p-3">
+        <label for="author">autor:</label>
+        <input type="text" id="author" class="bg-gray-200" required>
+      </div>
+
+      <div class="form-group p-3">
+      <label for="created_at">data:</label>
+      <input type="date" id="created_at" class="bg-gray-200">
+    </div>
+
+      <div class="form-group p-3">
+        <label for="content">tresc:</label>
+        <textarea id="content" class="bg-gray-200" required></textarea>
+      </div>
+
+      <button type="submit" class="p-3 ml-3 bg-gray-500">post</button>
+    </form>
+
   </body>
 </html>
